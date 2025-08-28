@@ -51,6 +51,11 @@
       } else {
         // Clear the QR code when input is empty
         document.getElementById("qrcode").innerHTML = "";
+        qrcode = new QRCode(document.getElementById("qrcode"), {
+        text: "",
+        width: 256,
+        height: 256
+        });
       }
     }
 
@@ -59,3 +64,4 @@
   </script>
 </body>
 </html>
+
